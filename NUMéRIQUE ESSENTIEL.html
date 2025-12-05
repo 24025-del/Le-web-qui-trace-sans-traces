@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thermes de Nird - Spa Minimaliste</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Georgia, serif;
+        line-height: 1.6;
+        color: #1a1a1a;
+        background: #e8f4f8;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        border-bottom: 3px solid #2c5f7f;
+        margin-bottom: 30px;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #1a4d5f;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+      }
+      .tagline {
+        font-size: 1.1em;
+        color: #4a7c8c;
+        font-style: italic;
+      }
+      nav {
+        background: #2c5f7f;
+        padding: 15px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 3px;
+      }
+      nav a:hover,
+      nav a:focus {
+        background: #1a4d5f;
+        outline: 2px solid #fff;
+      }
+      main {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        color: #2c5f7f;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        border-left: 4px solid #4a7c8c;
+        padding-left: 15px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      .service-list {
+        list-style: none;
+        padding-left: 20px;
+      }
+      .service-list li {
+        margin-bottom: 12px;
+        padding-left: 25px;
+        position: relative;
+      }
+      .service-list li::before {
+        content: "◆";
+        position: absolute;
+        left: 0;
+        color: #4a7c8c;
+      }
+      .media-container {
+        margin: 20px 0;
+        padding: 20px;
+        background: #f5f9fa;
+        border: 2px dashed #4a7c8c;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .media-container a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #2c5f7f;
+        text-decoration:none;
+      }
+      .hours {
+        background: #e8f4f8;
+        padding: 20px;
+        border-radius: 5px;
+        border-left: 4px solid #2c5f7f;
+      }
+      .hours strong {
+        color: #1a4d5f;
+      }
+      footer {
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 40px;
+        border-top: 3px solid #2c5f7f;
+        color: #4a7c8c;
+      }
+      .contact-info {
+        margin-top: 15px;
+      }
+      .contact-info a {
+        color: #2c5f7f;
+        text-decoration: none;
+        border-bottom: 1px dotted #2c5f7f;
+      }
+      .contact-info a:hover,
+      .contact-info a:focus {
+        border-bottom-style: solid;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2em;
+        }
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+        main {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>⁂ THERMES DE NIRD ⁂</h1>
+      <p class="tagline">Où l'eau pure rencontre la sérénité</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#horaires">Horaires</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="accueil">
+        <h2>Bienvenue aux Thermes de Nird</h2>
+        <p>
+          Nichés au cœur d'une vallée préservée, les Thermes de Nird vous
+          invitent à un voyage unique vers le bien-être. Nos sources naturelles
+          offrent une expérience de relaxation incomparable.
+        </p>
+        <p>
+          Dans un cadre architectural alliant tradition et modernité, nos
+          installations vous accueillent pour des moments de pure quiétude.
+          Laissez-vous porter par la chaleur apaisante de nos eaux minérales.
+        </p>
+      </section>
+
+      <section id="services">
+        <h2>Nos Services</h2>
+        <p>Les Thermes de Nird proposent une gamme complète de soins :</p>
+        <ul class="service-list">
+          <li>
+            <strong>Bains thermaux</strong> - Bassins d'eau chaude naturellement
+            minéralisée, 32°C à 38°C
+          </li>
+          <li>
+            <strong>Hammam traditionnel</strong> - Salles de vapeur aux essences
+            d'eucalyptus
+          </li>
+          <li>
+            <strong>Sauna finlandais</strong> - Chaleur sèche bienfaisante
+          </li>
+          <li>
+            <strong>Massages thérapeutiques</strong> - Masseurs professionnels
+            certifiés
+          </li>
+          <li>
+            <strong>Soins du visage</strong> - Produits naturels à base d'argile
+            thermale
+          </li>
+          <li>
+            <strong>Hydrothérapie</strong> - Jets massants et parcours
+            aquatiques
+          </li>
+        </ul>
+      </section>
+
+      <section id="galerie">
+        <h2>Galerie Photos</h2>
+        <p>Découvrez l'atmosphère unique de nos thermes.</p>
+
+        <div class="media-container">
+          <p><strong>Bassin principal au coucher du soleil</strong></p>
+          <a
+            href="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80"
+            target="_blank"
+            >Afficher l'image</a
+          >
+        </div>
+
+        <div class="media-container">
+          <p><strong>Salle de relaxation avec vue panoramique</strong></p>
+          <a
+            href="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80"
+            target="_blank"
+            >Afficher l'image</a
+          >
+        </div>
+
+        <div class="media-container">
+          <p><strong>Jardin zen et espace méditation</strong></p>
+          <a
+            href="https://images.unsplash.com/photo-1596178060810-4dd25a6e6e82?w=800&q=80"
+            target="_blank"
+            >Afficher l'image</a
+          >
+        </div>
+      </section>
+
+      <section id="horaires">
+        <h2>Horaires et Tarifs</h2>
+        <div class="hours">
+          <p><strong>Lundi au Vendredi :</strong> 9h00 - 21h00</p>
+          <p><strong>Samedi et Dimanche :</strong> 8h00 - 22h00</p>
+          <p><strong>Jours fériés :</strong> 10h00 - 20h00</p>
+          <p style="margin-top: 20px"><strong>Tarif journée :</strong> 45€</p>
+          <p><strong>Abonnement mensuel :</strong> 120€</p>
+          <p><strong>Forfait 10 entrées :</strong> 380€</p>
+        </div>
+
+        <p style="margin-top: 20px">
+          <em
+            >Réservation recommandée pour les soins et massages. Réductions
+            étudiants et seniors.</em
+          >
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Nous Contacter</h2>
+        <p>
+          Les Thermes de Nird sont à votre écoute pour toute information ou
+          réservation.
+        </p>
+
+        <p>
+          <strong>Adresse :</strong><br />
+          142 Route des Sources<br />
+          Vallée de Nird, 73000<br />
+          France
+        </p>
+
+        <div class="contact-info">
+          <p>
+            <strong>Téléphone :</strong>
+            <a href="tel:+33476543210">+33 4 76 54 32 10</a>
+          </p>
+          <p>
+            <strong>Email :</strong>
+            <a href="mailto:contact@thermes-nird.fr">contact@thermes-nird.fr</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Thermes de Nird - Tous droits réservés</p>
+      <p>Un havre de paix depuis 1892</p>
+    </footer>
+  </body>
+</html>
